@@ -1,10 +1,10 @@
 window.onload = function () {
-	var getJSON = function(url, callback) {
+	let getJSON = function(url, callback) {
 		    var xhr = new XMLHttpRequest();
 		    xhr.open('GET', url, true);
 		    xhr.responseType = 'json';
 		    xhr.onload = function() {
-			          var status = xhr.status;
+			          let status = xhr.status;
 			          if (status === 200) {
 					          callback(null, xhr.response);
 					        } else {
@@ -13,7 +13,7 @@ window.onload = function () {
 		    xhr.send();
 	};
 	function vCF(){
-		var vol = this.value / 100;
+		let vol = this.value / 100;
 		audio.volume = vol;
 	}
 	function cCF() {
@@ -51,14 +51,14 @@ function jscrape(){
     }
 		});
 	}	
-	var channelint = 0;;
-	var selectBox = document.getElementById("selection");
-	var audio = document.getElementById('audio');
-	var butt = document.getElementById('playButton');
-	var titele = document.getElementById('Stitle');
+	let channelint = 0;;
+	const selectBox = document.getElementById("selection");
+	const audio = document.getElementById('audio');
+	const butt = document.getElementById('playButton');
+	const titele = document.getElementById('Stitle');
 	audio.load();
-	var source = document.getElementById('audioSource'); 
-	var volSlide = document.getElementById("volSlide");
+	const source = document.getElementById('audioSource'); 
+	const volSlide = document.getElementById("volSlide");
 	volSlide.addEventListener('change', vCF);
 	selectBox.addEventListener('change', cCF);
 	butt.addEventListener('click', mPlay);
