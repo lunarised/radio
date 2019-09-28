@@ -1,6 +1,6 @@
 window.onload = function () {
 	let getJSON = function(url, callback) {
-		    var xhr = new XMLHttpRequest();
+		    const xhr = new XMLHttpRequest();
 		    xhr.open('GET', url, true);
 		    xhr.responseType = 'json';
 		    xhr.onload = function() {
