@@ -17,12 +17,12 @@ window.onload = function () {
 		audio.volume = vol;
 	}
 	function cCF() {
-		source.src = "http://nz.lunarised.com:8000/"+this.value+".ogg";
+		source.src = "http://lunarised.com:8000/"+this.value+".ogg";
 		switch (this.value){
-			case "ape":
+			case "myOriginals":
 				channelint = 0;
 			break;
-			case "beat":
+			case "ranch":
 				channelint = 1;
 			break
 		}
@@ -39,7 +39,7 @@ window.onload = function () {
 		  jscrape();
 		}, 5000);
 function jscrape(){	
-	getJSON('http://nz.lunarised.com:8000/status-json.xsl',
+	getJSON('http://lunarised.com:8000/status-json.xsl',
 	function(err, data) {
 		  if (err !== null) {
       alert('Something went wrong: ' + err + 'you should let lunarised know!');
