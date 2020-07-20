@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang = 'en'>
+<head>
+<meta charset="UTF-8">
+<title> Radio </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<h1>  Proof of Concept Radio </h1>
+	<div id="container">
+	<select id="selection">
+		<option value="myOriginals">My Original Works</option>
+		<option value="ranch">Cowboy song</option>
+	</select>
+	<br>
+	<br>
+  <input type="button" value="&#9658; On Mobile? Click here to get it started" id="playButton">
+  <p id="Stitle"> Please Enable JavaScript</p>
+  <input type="range" min="0" max="100" value="50" class="slider" id="volSlide">
+  <p> Please be aware, I am no web designer. (Im more of an ops person) If you think you can do a better job at designing the UI, please let me know! </p>
+	<audio id="audio">
+		<source id="audioSource" src=http://lunarised.com:8000/myOriginals.ogg type="audio/ogg"/>
+	</audio>
+	</div>
+</body>
+</html>
